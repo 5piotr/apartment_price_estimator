@@ -1,0 +1,8 @@
+# export conda env
+conda list -e > requirements.txt
+
+# create conda env from requirements file
+conda create --name <env> --file requirements.txt
+
+# export pip env
+pip list --format=freeze > requirements.txt
